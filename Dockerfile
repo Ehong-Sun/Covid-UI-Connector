@@ -8,4 +8,4 @@ RUN python3 -m pip install -r /app/requirements.txt
 
 COPY *.json *.py /app/
 
-CMD ["python3", "/app/connector.py", "/data/input/inputFile.json", "/data/output/data.json", "/app/input-schema.json", "/app/output-schema.json"]
+CMD ["python3", "/app/connector.py", "/data/input/inputFile.json", "/data/output/data.json", "/app/input-common.json", "/app/output-common.json"]
